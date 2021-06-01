@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 TEMPLATES = [
     {
